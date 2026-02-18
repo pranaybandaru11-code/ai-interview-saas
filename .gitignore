@@ -1,0 +1,28 @@
+echo. > .gitignore
+```
+
+---
+
+Now open that file in VS Code and paste this content:
+```
+# Dependencies
+node_modules/
+client/node_modules/
+server/node_modules/
+
+# Environment variables - NEVER push these!
+.env
+server/.env
+client/.env
+
+# Build files
+dist/
+build/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Misc
+*.log
+.vscode/
